@@ -1,5 +1,178 @@
 <!doctype html>
 <head>
   <title>Live Chat App</title>
+  <meta name="description" content="Live Chatting Platform" />
+  <link href="src/css/main.css" rel="stylesheet" />
 </head>
-<body></body>
+<body>
+  <div class="chat-l-main">
+    <aside class="chat-c-history">
+      <div class="chat-c-history__search-bar">
+        <label class="chat-c-search-field">
+          <input
+            class="chat-c-search-input"
+            type="text"
+            placeholder="Search for people to chat with"
+          />
+        </label>
+      </div>
+      <ul class="chat-c-user-list">
+        <li class="chat-c-user selected">
+          <div class="chat-l-user__container">
+            <div class="chat-l-user__contaner__inner">
+              <img
+                class="chat-c-user__image"
+                src="src/media/user.jpg"
+                alt="user profile"
+              />
+              <div class="chat-c-user__details">
+                <div class="chat-c-user__name">John Doe</div>
+                <div class="chat-c-user__message">You: Lorem Ipsum</div>
+              </div>
+            </div>
+            <span class="chat-c-user__timestamp">11:20</span>
+          </div>
+        </li>
+        <li class="chat-c-user">
+          <div class="chat-l-user__container">
+            <div class="chat-l-user__contaner__inner">
+              <img
+                class="chat-c-user__image"
+                src="src/media/user.jpg"
+                alt="user profile"
+              />
+              <div class="chat-c-user__details">
+                <div class="chat-c-user__name">John Doe</div>
+                <div class="chat-c-user__message">You: Lorem Ipsum</div>
+              </div>
+            </div>
+            <span class="chat-c-user__timestamp">10:21</span>
+          </div>
+        </li>
+        <li class="chat-c-user">
+          <div class="chat-l-user__container">
+            <div class="chat-l-user__contaner__inner">
+              <img
+                class="chat-c-user__image"
+                src="src/media/user.jpg"
+                alt="user profile"
+              />
+              <div class="chat-c-user__details">
+                <div class="chat-c-user__name">John Doe</div>
+                <div class="chat-c-user__message">You: Lorem Ipsum</div>
+              </div>
+            </div>
+            <span class="chat-c-user__timestamp">09:31</span>
+          </div>
+        </li>
+        <li class="chat-c-user">
+          <div class="chat-l-user__container">
+            <div class="chat-l-user__contaner__inner">
+              <img
+                class="chat-c-user__image"
+                src="src/media/user.jpg"
+                alt="user profile"
+              />
+              <div class="chat-c-user__details">
+                <div class="chat-c-user__name">John Doe</div>
+                <div class="chat-c-user__message">You: Lorem Ipsum</div>
+              </div>
+            </div>
+            <span class="chat-c-user__timestamp">09:10</span>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <div class="chat-l-container">
+      <header class="chat-c-user-header">
+        <div class="chat-c-user-header__details">
+          <img
+            class="chat-c-user__image--medium"
+            src="src/media/user.jpg"
+            alt="user profile"
+          />
+          <div class="chat-c-user__chat-info">
+            <h1 class="chat-c-user__chat-info__name">John Doe</h1>
+            <div class="chat-c-user__chat-info_status">Online</div>
+          </div>
+        </div>
+        <div class="chat-c-user__actions">
+          <button class="chat-c-user__details">
+            <img src="src/media/icons/info.svg" />
+          </button>
+        </div>
+      </header>
+      <main class="chat-l-messages">
+        <div class="chat-c-message chat-c-message__incoming">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          fermentum fermentum lectus quis congue. Nam eu purus sit amet orci
+          rhoncus bibendum.
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+        <div class="chat-c-message chat-c-message__sent">
+          Message Sent Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Proin fermentum fermentum lectus quis congue. Nam eu purus sit amet
+          orci rhoncus bibendum.
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+        <div class="chat-c-message chat-c-message__incoming">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          fermentum fermentum lectus quis congue. Nam eu purus sit amet orci
+          rhoncus bibendum.
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+        <div class="chat-c-message chat-c-message__sent">
+          Message Sent Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Proin fermentum fermentum lectus quis congue. Nam eu purus sit amet
+          orci rhoncus bibendum.
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+        <div class="chat-c-message chat-c-message__incoming">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          fermentum fermentum lectus quis congue. Nam eu purus sit amet orci
+          rhoncus bibendum.
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+        <div class="chat-c-message chat-c-message__sent">
+          Message Sent Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Proin fermentum fermentum lectus quis congue. Nam eu purus sit amet
+          orci rhoncus bibendum.
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+        <div class="chat-c-message chat-c-message__incoming">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          fermentum fermentum lectus quis congue. Nam eu purus sit amet orci
+          rhoncus bibendum.
+          <span class="chat-c-message__reaction">👍</span>
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+        <div class="chat-c-message chat-c-message__sent">
+          Message Sent Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Proin fermentum fermentum lectus quis congue. Nam eu purus sit amet
+          orci rhoncus bibendum.
+          <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
+        </div>
+      </main>
+      <form onsubmit="return false;" class="chat-c-composer">
+        <div class="chat-c-composer-container">
+          <div class="chat-c-composer-container__inner">
+            <button class="chat-c-message-emoji">
+              <img src="src/media/icons/emoji.svg" />
+            </button>
+            <label class="chat-c-message-field">
+              <input
+                class="chat-c-message-input"
+                type="text"
+                placeholder="Type a message"
+              />
+            </label>
+          </div>
+
+          <button class="chat-c-message-send">
+            <img src="src/media/icons/send.svg" />
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  background-color: #eefff1;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.chat-l-main {
+  display: flex;
+  height: 100vh;
+}
+
+.chat-c-history {
+  background-color: #ededed;
+  border: 1px solid #cccccc;
+  width: 30rem;
+  height: 100vh;
+}
+
+.chat-c-history__search-bar {
+  padding: 10px;
+}
+
+.chat-c-search-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cccccc;
+  display: block;
+}
+
+.chat-c-user-list {
+  height: 100vh;
+  margin-top: 1rem;
+  overflow-y: auto;
+  list-style-type: none;
+}
+
+.chat-c-user {
+  padding: 2rem 1rem 2rem 1rem;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.chat-l-user__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.chat-c-user__image {
+  height: 2rem;
+  border-radius: 100%;
+}
+
+.chat-c-user__image--medium {
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.chat-c-user__name {
+  font-size: 1.25rem;
+}
+
+.chat-c-user__message {
+  font-size: 0.9rem;
+}
+
+.selected,
+.selected:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.chat-c-user:hover {
+  background-color: rgb(208, 208, 208);
+}
+
+.chat-c-user:active {
+  background-color: rgb(182, 182, 182);
+}
+
+.chat-c-user-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff84;
+  border-bottom: 1px solid #cccccc;
+  backdrop-filter: blur(10px);
+}
+
+.chat-c-user-header__details {
+  margin: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-c-user__chat-info > h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.chat-c-user__chat-info_status {
+  opacity: 0.7;
+}
+
+.chat-c-user__details {
+  background: none;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.chat-l-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chat-l-messages {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chat-c-message {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 70%;
+
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.chat-c-message__incoming {
+  background-color: #ededed;
+  align-self: flex-start;
+  border-radius: 0 1rem 1rem 1rem;
+}
+
+.chat-c-message__sent {
+  background-color: #3b6759;
+  align-self: flex-end;
+  border-radius: 1rem 0 1rem 1rem;
+  color: white;
+}
+
+.chat-c-message__timestamp {
+  align-self: end;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.chat-c-message__incoming .chat-c-message__reaction {
+  position: relative;
+  align-self: end;
+  margin-right: 10px;
+  top: 60%;
+  font-size: 1.2rem;
+  background-color: #d1d1d1;
+  padding: 0.25rem 1rem;
+  border-radius: 10rem;
+  border: 3px solid #eefff1;
+}
+
+.chat-c-composer {
+  width: 100%;
+  background-color: transparent;
+  padding: 0.75rem;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-c-composer-container {
+  display: flex;
+  width: 90%;
+  padding: 5px;
+  border-radius: 2rem;
+  align-items: center;
+  background-color: #e7e7e7;
+  justify-content: space-between;
+}
+
+.chat-c-message-field {
+  width: 100%;
+}
+
+.chat-c-message-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: none;
+  border-radius: 0;
+  background-color: #e7e7e7;
+  font-size: 1rem;
+}
+
+.chat-c-message-input:focus {
+  outline: none;
+}
+
+.chat-c-message-emoji {
+  border: none;
+  background-color: transparent;
+  margin-left: 2px;
+  padding: 0.75rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.chat-c-message-emoji:hover {
+  background-color: #84aea1;
+  border-radius: 100%;
+}
+
+.chat-c-message-send {
+  border: none;
+  background-color: #3b6759;
+  border-radius: 100%;
+  color: white;
+  margin-left: 2px;
+  padding: 0.75rem;
+  cursor: pointer;
+  justify-self: end;
+  display: inline-flex;
+}
+
+.chat-c-message-send:hover {
+  background-color: #23453a;
+}
+
+.chat-c-composer-container__inner {
+  display: flex;
+  align-items: center;
+}
+
+.chat-l-user__contaner__inner {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-c-user__timestamp {
+  opacity: 0.5;
+}
