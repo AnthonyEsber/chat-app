@@ -5,6 +5,8 @@
   <link href="src/css/main.css" rel="stylesheet" />
 </head>
 <body>
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script type="module" src="src/js/main.js"></script>
   <div class="chat-l-main">
     <aside class="chat-c-history">
       <div class="chat-c-history__search-bar">
@@ -103,6 +105,8 @@
         </div>
       </header>
       <main class="chat-l-messages">
+        <!--
+        
         <div class="chat-c-message chat-c-message__incoming">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
           fermentum fermentum lectus quis congue. Nam eu purus sit amet orci
@@ -152,6 +156,7 @@
           orci rhoncus bibendum.
           <time class="chat-c-message__timestamp" datetime="11:20">11:20</time>
         </div>
+        -->
       </main>
       <form onsubmit="return false;" class="chat-c-composer">
         <div class="chat-c-composer-container">
@@ -167,7 +172,7 @@
               />
             </label>
           </div>
-
+          <div class="chat-c-typing"></div>
           <button class="chat-c-message-send">
             <img src="src/media/icons/send.svg" />
           </button>
