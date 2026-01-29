@@ -183,7 +183,6 @@ ul {
   background-color: transparent;
   padding: 0.75rem;
   display: flex;
-  flex: 1;
   align-items: center;
   justify-content: center;
 }
@@ -258,4 +257,36 @@ ul {
 
 .chat-c-user__timestamp {
   opacity: 0.5;
+}
+
+.chat-c-typing {
+  min-height: 20px; /* Reserve space to avoid layout jumps */
+  color: #666;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+}
+
+.chat-c-typing__dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #aaa;
+  margin: 0 2px;
+  animation: blink 1.4s infinite both;
+}
+
+.chat-c-typing__dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.chat-c-typing__dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%,
+  80%,
+  100% {
+    opacity: 0.2;
+  }
 }
