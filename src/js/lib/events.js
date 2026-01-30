@@ -15,7 +15,7 @@ export function bindUIEvents(socket) {
   });
 
   input.addEventListener("input", () => {
-    socket.emit(typingTimeout, true);
+    socket.emit("typing", true);
 
     clearTimeout(typingTimeout);
     typingTimeout = setTimeout(() => {
