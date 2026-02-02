@@ -6,6 +6,7 @@ export function initApp() {
   const username = prompt("Enter username");
   const room = "lobby";
 
+  ui.setLobbyHeader();
   console.log("init app");
 
   const socket = initSocket(username, room);
